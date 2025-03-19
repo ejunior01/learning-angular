@@ -1,13 +1,12 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
-import { LucideAngularModule,ShoppingBag } from 'lucide-angular';
+import { ShoppingCartBagComponent } from '../shopping-cart-bag/shopping-cart-bag.component';
 
 @Component({
   selector: 'app-header',
-  imports: [NgOptimizedImage, SearchBarComponent,LucideAngularModule],
+  imports: [SearchBarComponent,ShoppingCartBagComponent,NgOptimizedImage],
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-readonly ShoppingBag = ShoppingBag
 }
